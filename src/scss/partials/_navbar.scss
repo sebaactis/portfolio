@@ -1,4 +1,13 @@
-.nav-link {
-    font-size: 1.2rem;
-    margin: 0 0.5rem;
+nav {
+    .container-fluid {
+        .links {
+            .navbar-nav {
+                .nav-link {
+                    font-size: 1.2rem;
+                    margin: 0 0.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
 }

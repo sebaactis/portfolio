@@ -1,0 +1,26 @@
+.aboutCont {
+    text-align: center;
+    background-color: #057cb369;
+    border-radius: 2%;
+    width: 75%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .hiAbout {
+        color: white;
+        background-color: #0082be00;
+        font-size: 1.7rem;
+
+    }
+
+    .descAbout {
+        margin-top: 1rem;
+        color: white;
+        background-color: #0082be00;
+        font-size: 1.2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
