@@ -9,12 +9,13 @@ import './scss/main.scss';
 function App() {
   return (
     <div className="App">
+
       <NavBar />
       <Main />
       <About />
-      <Contact />
-      <Proyects />
       <Skills />
+      <Proyects />
+      <Contact />
 
     </div>
   );

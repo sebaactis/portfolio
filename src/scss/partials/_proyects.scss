@@ -1,0 +1,38 @@
+.proyectSection {
+
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+
+    figure {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            font-size: 2rem;
+            display: none;
+            color: white;
+            background-color: black;
+
+            p {
+                text-align: center;
+                margin-top: 7rem;
+                background-color: black;
+            }
+        }
+
+    }
+
+    figure:hover figcaption {
+        display: block;
+    }
+}

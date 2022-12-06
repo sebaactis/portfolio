@@ -10,10 +10,10 @@ const NavBar = () => {
                 <div className="collapse links navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-link" href="#">HOME</a>
-                        <a className="nav-link" href="#">ABOUT ME</a>
-                        <a className="nav-link" href="#">SKILLS</a>
-                        <a className="nav-link">PROYECTS</a>
-                        <a className="nav-link">CONTACT</a>
+                        <a className="nav-link" href="#about">ABOUT ME</a>
+                        <a className="nav-link" href="#skills">SKILLS</a>
+                        <a className="nav-link" href="#proyects">PROYECTS</a>
+                        <a className="nav-link" href="#contact">CONTACT</a>
                     </div>
                 </div>
             </div>

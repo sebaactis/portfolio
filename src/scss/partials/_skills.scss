@@ -1,0 +1,42 @@
+.skillTitle {
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    text-decoration: underline;
+}
+
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 6rem;
+
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        border: rgba(255, 255, 255, 0.226) solid 2px;
+        background-color: rgba(255, 255, 255, 0.075);
+        z-index: 1;
+        
+
+        .skillImg {
+            color: white;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .skillName {
+            color: white;
+            background-color: rgba(255, 255, 255, 0);
+            
+        }
+
+        
+    }
+}
