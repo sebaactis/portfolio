@@ -1,0 +1,47 @@
+.contactContainer {
+
+    .divContact {
+    
+            color: white;
+            background-color: #057cb369;
+            height: 200px;
+            width: 70%;
+            margin: 15rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px 20px 20px 20px / 15px 15px 15px 15px;
+
+        
+        
+        h3 {
+            background-color: #057cb300;
+            text-align: center;
+            
+        }
+    }
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .input {
+            background-color: rgba(255, 255, 255, 0.219);
+            padding: 1rem;
+            width: 50%;
+            
+        }
+
+        textarea {
+            background-color: rgba(255, 255, 255, 0.219);
+            height: 20rem; 
+            width: 50%;
+            resize: none;
+            
+        }
+    }
+}
+
