@@ -9,8 +9,9 @@
 .skillsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
+    gap: 2rem;
     margin-top: 6rem;
+
 
 
     .cards {
@@ -23,8 +24,8 @@
         border-radius: 1rem;
         border: rgba(255, 255, 255, 0.226) solid 2px;
         background-color: rgba(255, 255, 255, 0.075);
-        z-index: 1;
-        
+        transition: all 200ms;
+
 
         .skillImg {
             color: white;
@@ -34,9 +35,13 @@
         .skillName {
             color: white;
             background-color: rgba(255, 255, 255, 0);
-            
+
         }
 
-        
     }
+
+    .cards:hover {
+        transform: translateY(-10px);
+    }
+
 }

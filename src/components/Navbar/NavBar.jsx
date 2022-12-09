@@ -8,13 +8,14 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse links navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-link" href="#">HOME</a>
-                        <a className="nav-link" href="#about">ABOUT ME</a>
-                        <a className="nav-link" href="#skills">SKILLS</a>
-                        <a className="nav-link" href="#proyects">PROYECTS</a>
-                        <a className="nav-link" href="#contact">CONTACT</a>
-                    </div>
+                    <ul className="navbar-nav">
+                        
+                        <li><a className="nav-link" href="#home">HOME</a></li>
+                        <li><a className="nav-link" href="#about">ABOUT ME</a></li>
+                        <li><a className="nav-link" href="#skills">SKILLS</a></li>
+                        <li><a className="nav-link" href="#proyects">PROYECTS</a></li>
+                        <li><a className="nav-link" href="#contact">CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>

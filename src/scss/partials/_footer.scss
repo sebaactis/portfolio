@@ -13,6 +13,12 @@
 
     a {
         color: #06ffead0;
+        transition: all 200ms ease-in-out;
+        transform: scale(1.4);
+    }
+
+    a:hover {
+        transform: scale(1.6);
     }
 
 }

@@ -7,7 +7,7 @@ const Proyects = () => {
 
     <>
 
-      <h1 style={{ textAlign: "center", marginTop: "10rem", color: "white" }} id="proyects"> My Proyects </h1>
+      <h1 style={{ textAlign: "center", marginTop: "10rem", color: "white" }} id="proyects"> MY PROYECTS </h1>
       <section className="proyectSection">
 
         {
@@ -20,8 +20,8 @@ const Proyects = () => {
                     {proyect.description}
                   </p>
                   <div className="proyButtons">
-                    <button className="gitBtn"> Github </button>
-                    <button className="webBtn"> Website </button>
+                    <a href={proyect.linkgit} target="_blank" className="gitBtn"> GITHUB </a>
+                    <a href="#" className="webBtn"> Website </a>
                   </div>
                 </div>
 
