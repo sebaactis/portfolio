@@ -7,7 +7,7 @@ const Contact = () => {
 
     <article className="divContact container">
       
-      <h3>Trabajemos juntos! Deja tus datos aqui</h3>
+      <h3 id="contact">Trabajemos juntos! Deja tus datos aqui</h3>
 
     </article>
 
