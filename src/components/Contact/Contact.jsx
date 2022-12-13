@@ -1,23 +1,69 @@
-import React from 'react'
+import { useState } from 'react'
+import { contactCollection } from "../../firebase";
+import { addDoc, serverTimestamp } from "firebase/firestore";
+import instagram from "../../img/networks/instagram.png"
+import linkedin from "../../img/networks/linkedin.png"
+import github from "../../img/networks/github.png"
+import twitter from "../../img/networks/twitter.png"
+
 
 const Contact = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [confEmail, setConfEmail] = useState("");
+  const [details, setDetails] = useState("");
+
+
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handleConfEmail = (e) => setConfEmail(e.target.value);
+  const handleDetails = (e) => setDetails(e.target.value);
+
+
+  const enviarInfo = (e) => {
+    e.preventDefault();
+
+
+    const infoContact = {
+      nombre: name,
+      email: email,
+      details: details,
+      date: serverTimestamp()
+    };
+
+    addDoc(contactCollection, infoContact)
+      .then((res) => {
+        console.log(res);
+
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+
+  };
+
   return (
 
     <section className="contactContainer">
 
-    <article className="divContact container">
-      
-      <h3 id="contact">Trabajemos juntos! Deja tus datos aqui</h3>
 
-    </article>
+      <article className="divContact container">
+
+        <h3 id="contact">If you want to contact me, I leave you the following form, and my active social networks.</h3>
+
+      </article>
 
 
-      <form className="formContainer">
+      <form className="formContainer" onSubmit={enviarInfo}>
 
-        <input className="input" type="text" placeholder="Name" />
-        <input className="input" type="email" placeholder="Email" />
-        <textarea  placeholder="  Details" maxLength="400" ></textarea>
-        <button type="submit" className="btn btn-primary"> Submit </button>
+        <h1 style={{textShadow: "1px 9px 10px rgba(0,0,0,0.6)", color: "white"}}> CONTACT </h1>
+
+        <input className="input" type="text" placeholder="Name" name="name" value={name} onChange={handleName} />
+        <input className="input" type="email" placeholder="Email" name="email" value={email} onChange={handleEmail} />
+        <input className="input" type="email" placeholder="Confirm Email" name="confEmail" value={confEmail} onChange={handleConfEmail} />
+        <textarea placeholder="  Details" maxLength="400" value={details} name="details" onChange={handleDetails}></textarea>
+        <button className="btn btn-success" disabled={name === "" || email === "" || confEmail === "" || details === "" || email !== confEmail}> Send </button>
 
       </form>
 
