@@ -1,0 +1,63 @@
+@media only screen and (max-width: 576px) {
+
+    .contactContainer {
+
+        .divContact {
+            width: 80%;
+            margin-left: 3.8rem;
+        }
+
+        .formContainer {
+
+
+            .input {
+
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 390px) {
+    .contactContainer {
+
+        .divContact {
+
+            width: 80%;
+            margin-left: 6rem;
+        }
+
+        .formContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            h1 {
+                margin-left: 7rem;
+            }
+
+            .input {
+                margin-left: 7rem;
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+                margin-left: 7rem;
+            }
+
+            button {
+                margin-left: 7rem;
+            }
+        }
+    }
+}

@@ -1,10 +1,6 @@
 import { useState } from 'react'
 import { contactCollection } from "../../firebase";
 import { addDoc, serverTimestamp } from "firebase/firestore";
-import instagram from "../../img/networks/instagram.png"
-import linkedin from "../../img/networks/linkedin.png"
-import github from "../../img/networks/github.png"
-import twitter from "../../img/networks/twitter.png"
 
 
 const Contact = () => {

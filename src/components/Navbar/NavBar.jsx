@@ -4,8 +4,8 @@ const NavBar = () => {
     return (
         <nav className="navbar w-100 navbar-expand-lg navbar-light fixed-top justify-content-end">
             <div className="container-fluid justify-content-end">
-                <button className="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                <button style={{backgroundColor: "#0c999269", border: "1px solid white"}} className="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon navbar-primary" style={{backgroundColor: "#0c999200"}}></span>
                 </button>
                 <div className="collapse links navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <ul className="navbar-nav">

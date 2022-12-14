@@ -1,13 +1,13 @@
 @media only screen and (max-width: 576px) {
 
     .skillTitle {
-        
+
         margin-left: 1rem;
     }
 
 
     .skillsContainer {
-        
+
         grid-template-columns: 100%;
         margin-right: 7rem;
 
@@ -25,4 +25,22 @@
 
     }
 
+}
+
+@media only screen and (max-width: 390px) {
+
+    .skillTitle {
+        margin-left: 7rem;
+    }
+
+    .skillsContainer {
+
+        grid-template-columns: 100%;
+        margin-right: 2rem;
+
+        .cards {
+            padding: 2rem;
+            margin-left: 9rem;
+        }
+    }
 }
