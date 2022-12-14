@@ -3,6 +3,10 @@
     margin-bottom: -12.8rem;
     text-align: center;
 
+    .avatar {
+        width: 17rem;
+    }
+
     .mainHello {
         font-size: 3.5rem;
         color: white;
@@ -21,6 +25,7 @@
 
     .imgStack {
         background-color: #057cb300;
+        width: 70%
     }
 
 }

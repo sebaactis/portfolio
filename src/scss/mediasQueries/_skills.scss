@@ -1,0 +1,28 @@
+@media only screen and (max-width: 576px) {
+
+    .skillTitle {
+        
+        margin-left: 1rem;
+    }
+
+
+    .skillsContainer {
+        
+        grid-template-columns: 100%;
+        margin-right: 7rem;
+
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            margin-left: 7rem;
+
+        }
+
+
+    }
+
+}

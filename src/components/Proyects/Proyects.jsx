@@ -6,7 +6,7 @@ const Proyects = () => {
 
     <>
 
-      <h1 style={{ textAlign: "center", marginTop: "10rem", color: "white", textShadow: "1px 9px 10px rgba(0,0,0,0.6)" }} id="proyects"> PROYECTS </h1>
+      <h1 className="titleProy" id="proyects"> PROYECTS </h1>
       <section className="proyectSection">
 
         {

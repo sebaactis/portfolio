@@ -1,0 +1,31 @@
+@media only screen and (max-width: 576px) { 
+
+.proyectSection {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    gap: 3rem;
+
+    figure {
+        position: relative;
+        width: 70%;
+
+        img {
+            width: 70%;
+        }
+
+        .proyectHov {
+            width: 70%;
+        }
+
+        .proyectHov p {
+            font-size: 1.2rem;
+        }
+
+    }
+
+}
+
+
+}
