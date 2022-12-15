@@ -31,32 +31,27 @@
         .divContact {
 
             width: 80%;
-            margin-left: 6rem;
+            margin-left: 3rem;
         }
 
         .formContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
 
             h1 {
-                margin-left: 7rem;
+                margin-left: 1rem;
             }
 
             .input {
-                margin-left: 7rem;
+                margin-left: 1rem;
                 width: 80%;
             }
 
             textarea {
                 width: 80%;
-                margin-left: 7rem;
+                margin-left: 1rem;
             }
 
             button {
-                margin-left: 7rem;
+                margin-left: 1rem;
             }
         }
     }

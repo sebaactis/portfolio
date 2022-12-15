@@ -8,7 +8,6 @@
         gap: 3rem;
 
         figure {
-            position: relative;
             width: 70%;
 
             img {
@@ -31,12 +30,25 @@
 @media only screen and (max-width: 390px) {
 
     .titleProy {
-        margin-left: 7rem;
+        margin-left: 1rem;
     }
 
     .proyectSection {
 
-        margin-left: 17rem;
+        margin-left: 12.5rem;
 
+        figure {
+            width: 65%;
+
+            img {
+                width: 65%;
+            }
+
+            .proyectHov {
+                width: 65%;
+            }
+
+        }
     }
+
 }
