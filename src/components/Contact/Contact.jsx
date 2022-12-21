@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { contactCollection } from "../../firebase";
 import { addDoc, serverTimestamp } from "firebase/firestore";
+import swal from "sweetalert";
 
 
 const Contact = () => {
+
+
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,6 +19,9 @@ const Contact = () => {
   const handleConfEmail = (e) => setConfEmail(e.target.value);
   const handleDetails = (e) => setDetails(e.target.value);
 
+  const alert = () => {
+    swal("alerta")
+  }
 
   const enviarInfo = (e) => {
     e.preventDefault();
@@ -37,6 +43,11 @@ const Contact = () => {
         console.log(error)
       })
 
+    setName("");
+    setEmail("");
+    setConfEmail("");
+    setDetails("");
+
   };
 
   return (
@@ -53,13 +64,13 @@ const Contact = () => {
 
       <form className="formContainer" onSubmit={enviarInfo}>
 
-        <h1 style={{textShadow: "1px 9px 10px rgba(0,0,0,0.6)", color: "white"}}> CONTACT </h1>
+        <h1 style={{ textShadow: "1px 9px 10px rgba(0,0,0,0.6)", color: "white" }}> CONTACT </h1>
 
         <input className="input" type="text" placeholder="Name" name="name" value={name} onChange={handleName} />
         <input className="input" type="email" placeholder="Email" name="email" value={email} onChange={handleEmail} />
         <input className="input" type="email" placeholder="Confirm Email" name="confEmail" value={confEmail} onChange={handleConfEmail} />
         <textarea placeholder="  Details" maxLength="400" value={details} name="details" onChange={handleDetails}></textarea>
-        <button className="btn btn-success" disabled={name === "" || email === "" || confEmail === "" || details === "" || email !== confEmail}> Send </button>
+        <button className="btn btn-success" onClick={() => alert()} disabled={name === "" || email === "" || confEmail === "" || details === "" || email !== confEmail}> Send </button>
 
       </form>
 
