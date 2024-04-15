@@ -16,18 +16,18 @@ const Presentation = () => {
                 <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>A fullstack developer A fullstack developer A fullstack developer A fullstack developer</p>
 
                 <div className="flex gap-3 mt-10 items-center">
-                    <Button className="rounded-2xl p-[22px] bg-gradient-to-r text-black font-bold dark:text-white from-indigo-300 to-indigo-700 hover:scale-[1.02] text-md transition duration-150">CONTACT ME
-                        <span className="bg-black rounded-full text-white dark:bg-white dark:text-black ml-3 p-[1px]">
+                    <Button className="rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">CONTACT ME
+                        <span className="bg-black rounded-full text-white dark:text-white p-2 ml-3 -mr-3">
                             <ArrowUpRight />
                         </span>
                     </Button>
 
-                    <Button className="transition duration-500 rounded-full p-2 ml-1 bg-indigo-600 borde hover:bg-indigo-800  dark:hover:bg-indigo-300">
-                        <Github className="text-white dark:text-indigo-900" />
+                    <Button className="transition duration-500 rounded-full py-6 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
+                        <Github className="text-white dark:text-indigo-400 font-bold" />
                     </Button>
 
-                    <Button className="transition duration-500 rounded-full p-2 ml-1 bg-indigo-600 borde hover:bg-indigo-800  dark:hover:bg-indigo-300">
-                        <LinkedinIcon className="text-white dark:text-indigo-900" />
+                    <Button className="transition duration-500 rounded-full py-6 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
+                        <LinkedinIcon className="text-white dark:text-indigo-400 font-bold" />
                     </Button>
                 </div>
             </div>
