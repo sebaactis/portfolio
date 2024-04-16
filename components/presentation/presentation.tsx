@@ -11,9 +11,9 @@ const Presentation = () => {
         <div className="container flex md:flex-row flex-col w-full justify-around items-center h-[800px]">
             <div className="flex flex-col justify-center mt-5 md:mt-0">
 
-                    <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> HI, I AM </h2>
-                    <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> SEBASTIAN ACTIS.</h2>
-                    <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>A fullstack developer A fullstack developer A fullstack developer A fullstack developer</p>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> HI, I AM </h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> SEBASTIAN ACTIS.</h2>
+                <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>A fullstack developer A fullstack developer A fullstack developer A fullstack developer</p>
 
                 <div className="flex gap-3 mt-10 items-center">
                     <Button className="rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">CONTACT ME
@@ -22,13 +22,13 @@ const Presentation = () => {
                         </span>
                     </Button>
 
-                    <Button className="transition duration-500 rounded-full py-6 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
+                    <a href="https://github.com/sebaactis" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
                         <Github className="text-white dark:text-indigo-400 font-bold" />
-                    </Button>
+                    </a>
 
-                    <Button className="transition duration-500 rounded-full py-6 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
+                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
                         <LinkedinIcon className="text-white dark:text-indigo-400 font-bold" />
-                    </Button>
+                    </a>
                 </div>
             </div>
 
