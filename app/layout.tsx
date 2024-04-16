@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="es">
+      <body className="bg-slate-50 dark:bg-[#272727]">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
