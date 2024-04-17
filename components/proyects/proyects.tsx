@@ -8,8 +8,8 @@ import windenpreview from "@/public/winden-preview.png"
 
 const Proyects = () => {
     return (
-        <section id="proyects" className="h-[90rem] mt-14 md:mt-0">
-            <div className="flex flex-col md:ml-[23rem] mx-5 md:mx-0 md:mt-20 gap-2">
+        <section id="proyects" className="md:ml-28 mt-14 md:mt-0 mb-20">
+            <div className="flex flex-col mx-5 md:mx-0 md:mt-20 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> FEATURED PROYECTS.</h2>
                 <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>Here are some of the selected projects that showcase my passion for front-end development.</p>
             </div>

@@ -16,7 +16,7 @@ interface ProyectCardProps {
 
 const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: ProyectCardProps) => {
     return (
-        <article className="flex md:flex-row flex-col justify-center items-center mt-20 md:mt-24 md:ml-10 gap-20 md:gap-40">
+        <article className="flex md:flex-row flex-col ml-6 md:ml-0 mt-20 md:mt-24 gap-20 md:gap-36">
             <section>
                 <div className="bg-[#9e9e9e14] dark:bg-[#313131] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
                     <Image
@@ -52,7 +52,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                 <div className="flex gap-4">
                     <div className="flex flex-col">
                         <div className="flex">
-                            <a className=" text-indigo-600 dark:text-indigo-400 font-bold" href={demo} target='_blank'>LIVE DEMO</a>
+                            <a className="text-indigo-600 dark:text-indigo-400 font-bold" href={demo} target='_blank'>LIVE DEMO</a>
                             <ArrowUpRight className="text-indigo-600 dark:text-indigo-400 font-bold underline" />
                         </div>
                         <div className="border border-indigo-600 dark:border-indigo-400">
