@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 
 const Contact = () => {
     return (
-        <section className="flex md:ml-28 mt-16 mb-10">
+        <section className="flex mt-16 mb-10 md:ml-72">
             <article className="flex flex-col gap-6">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> LETS CONNECT </h2>
                 <div className="flex flex-col gap-3">

@@ -8,7 +8,7 @@ import { ArrowUpRight, Github, Linkedin, LinkedinIcon } from 'lucide-react'
 
 const Presentation = () => {
     return (
-        <div className="container flex md:flex-row flex-col w-full justify-around items-center h-[800px]">
+        <div className="flex md:flex-row flex-col w-full items-center h-[800px] md:ml-72 gap-56">
             <div className="flex flex-col justify-center mt-5 md:mt-0">
 
                 <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> HI, I AM </h2>

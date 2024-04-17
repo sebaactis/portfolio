@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutMe = () => {
     return (
-        <section id="aboutme" className="ml-5 md:ml-28 flex flex-col md:flex-row mt-20 gap-20 md:gap-52 md:mb-36">
+        <section id="aboutme" className="flex flex-col md:ml-72 md:flex-row mt-20 gap-20 md:gap-52 md:mb-36">
             <div className="flex flex-col md:mx-0 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> ABOUT ME.</h2>
             </div>
