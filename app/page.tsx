@@ -13,8 +13,6 @@ export default function Home() {
         <Proyects />
         <Separator className="dark:bg-gray-500" />
         <AboutMe />
-        <Separator className="dark:bg-gray-500" />
-        <Contact />
       </main>
     </>
   );

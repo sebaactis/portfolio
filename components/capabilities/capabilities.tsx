@@ -6,7 +6,7 @@ const Capabilities = () => {
     const capabilities = ["HTML", "CSS", "JAVASCRIPT", "REACT", "TYPESCRIPT", "C#", "NEXT JS", "ASTRO", "TAILWIND CSS", "BOOTSTRAP", "NODE JS", "DOCKER", "POSTMAN", "SQL", "MONGODB", "FIREBASE", "PRISMA", "SUPABASE"]
 
     return (
-        <section className="flex flex-col md:flex-row ml-5 md:ml-36 2xl:ml-60 gap-10 md:gap-40 mt-20 mb-10">
+        <section className="flex flex-col md:flex-row ml-6 md:ml-36 2xl:ml-72 gap-10 md:gap-40 mt-20 mb-20">
             <div className="flex flex-col md:mx-0 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> MY CAPABILITIES.</h2>
             </div>

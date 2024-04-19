@@ -1,4 +1,5 @@
 import Capabilities from '@/components/capabilities/capabilities'
+import Experience from '@/components/experience/experience'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { bebasNeue, manrope } from '@/utils/fonts'
@@ -7,7 +8,7 @@ import { ArrowDown, Github, LinkedinIcon } from 'lucide-react'
 const PageAboutMe = () => {
   return (
     <>
-      <section id="aboutme" className="flex flex-col ml-5 mb-20 md:ml-36 2xl:ml-60 md:flex-row mt-20 gap-20 md:gap-52 md:mb-60">
+      <section id="aboutme" className="flex flex-col mb-20 ml-6 md:ml-36 2xl:ml-72 md:flex-row mt-20 gap-20 md:gap-52 md:mb-60">
         <div className="flex flex-col md:mx-0 gap-2">
           <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> ABOUT ME.</h2>
         </div>
@@ -36,6 +37,8 @@ const PageAboutMe = () => {
       </section>
       <Separator className="dark:bg-gray-500" />
       <Capabilities />
+      <Separator className="dark:bg-gray-500" />
+      <Experience />
     </>
   )
 }

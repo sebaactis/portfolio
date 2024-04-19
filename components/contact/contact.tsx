@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <section id="contact" className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
             <article className="flex flex-col gap-7">
-                <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> LETS CONNECT </h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> LETS CONNECT </h2>
                 <div className="flex flex-col gap-3">
                     <div className="flex">
                         <p className={`${manrope.className} font-light mr-1`}>Say hello at</p>

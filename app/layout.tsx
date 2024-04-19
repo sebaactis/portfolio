@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import NavBar from "@/components/navbar/navbar";
+import { Separator } from "@/components/ui/separator";
+import Contact from "@/components/contact/contact";
 
 export const metadata: Metadata = {
   title: "Sebastian Actis"
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="bg-slate-50 dark:bg-[#272727]">
+      <body className="bg-slate-50 dark:bg-[#171717]">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -23,6 +25,8 @@ export default function RootLayout({
         >
           <NavBar />
           {children}
+          <Separator className="dark:bg-gray-500" />
+          <Contact />
         </ThemeProvider>
       </body>
     </html >
