@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-
+import NavBar from "@/components/navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Sebastian Actis"
@@ -21,6 +21,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
         >
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>

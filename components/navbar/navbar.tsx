@@ -13,7 +13,7 @@ const NavBar = () => {
             <ul className={`${manrope.className} gap-4 text-lg mr-10 hidden md:flex items-center justify-between`}>
                 <NavLink label="Work" href="#proyects" />
                 <NavLink label="About Me" href="#aboutme" />
-                <NavLink label="Contact" href="#" />
+                <NavLink label="Contact" href="#contact" />
             </ul>
         </nav>
     )

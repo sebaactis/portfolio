@@ -8,7 +8,7 @@ import windenpreview from "@/public/winden-preview.png"
 
 const Proyects = () => {
     return (
-        <section id="proyects" className="md:ml-72 mt-14 md:mt-0 mb-20">
+        <section id="proyects" className="ml-6 md:ml-36 2xl:ml-72 mt-14 md:mt-0 mb-20">
             <div className="flex flex-col mx-5 md:mx-0 md:mt-20 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> FEATURED PROYECTS.</h2>
                 <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>Here are some of the selected projects that showcase my passion for front-end development.</p>
