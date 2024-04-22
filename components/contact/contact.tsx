@@ -1,11 +1,26 @@
+"use client"
+
+import React, { FormEvent, useRef } from 'react';
+
 import { bebasNeue, manrope } from '@/utils/fonts'
 import { Github, Instagram, LinkedinIcon, Twitter } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from '@/components/ui/button'
+import { sendEmail } from '@/utils/emailHandler';
 
 const Contact = () => {
+
+    const form = useRef(null);
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+
+        if (form.current !== null) {
+            sendEmail(e, form.current)
+        }    
+    }
+
     return (
         <section id="contact" className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
             <article className="flex flex-col gap-7">
@@ -39,16 +54,16 @@ const Contact = () => {
                 </div>
 
             </article>
-            <form className="md:ml-80 flex flex-col gap-6">
+            <form ref={form} onSubmit={handleSubmit} className="md:ml-80 flex flex-col gap-6">
                 <Label htmlFor="name">Name</Label>
-                <Input className="w-[20rem] md:w-[30rem]" type="text" id="name" />
+                <Input required className="w-[20rem] md:w-[30rem]" type="text" id="user_name" name="user_name" />
                 <Label htmlFor="email">Email</Label>
-                <Input className="w-[20rem] md:w-[30rem]" type="email" id="email" />
+                <Input required className="w-[20rem] md:w-[30rem]" type="email" id="user_email" name="user_email" />
                 <Label htmlFor="subject">Subject</Label>
-                <Input className="w-[20rem] md:w-[30rem]" type="text" id="subject" />
+                <Input required className="w-[20rem] md:w-[30rem]" type="text" id="subject" name="subject" />
                 <Label htmlFor="message">Message</Label>
-                <Textarea className="w-[20rem] md:w-[30rem]" id="message" />
-                <Button className="w-[20rem] md:w-[30rem] rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">SUBMIT
+                <Textarea required className="w-[20rem] md:w-[30rem]" id="message" name="message" />
+                <Button type="submit" className="w-[20rem] md:w-[30rem] rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">SUBMIT
 
                 </Button>
             </form>
