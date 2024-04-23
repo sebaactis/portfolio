@@ -4,6 +4,7 @@ import NavLink from './navlink';
 import MobileToogle from './mobile-toggle';
 import { bebasNeue, manrope } from '@/utils/fonts';
 import { useLanguage } from '@/hooks/useLanguage';
+import ButtonsFixed from '../buttonsFixed';
 
 const NavBar = () => {
 
@@ -12,6 +13,9 @@ const NavBar = () => {
     return (
         <nav className='flex justify-between items-center m-6'>
             <a href="/" className={`${bebasNeue.className} text-3xl md:ml-8`}> SEBASTIAN ACTIS</a>
+            <div className="md:hidden">
+                <ButtonsFixed />
+            </div>
             <MobileToogle />
             <ul className={`${manrope.className} gap-4 text-lg mr-10 hidden md:flex items-center justify-between`}>
                 <NavLink label={language ? "Work" : "Trabajos"} href="#proyects" />

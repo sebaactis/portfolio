@@ -13,7 +13,9 @@ export default function Home() {
 
   return (
     <>
-      <ButtonsFixed />
+      <div className="hidden md:block">
+        <ButtonsFixed />
+      </div>
       <main>
         <Presentation />
         <Separator className="dark:bg-gray-500" />

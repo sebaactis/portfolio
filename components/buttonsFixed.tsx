@@ -8,7 +8,7 @@ const ButtonsFixed = () => {
     const { language, changeLanguage } = useLanguage();
 
     return (
-        <div className="flex flex-col w-10 mt-5 ml-10 fixed gap-1">
+        <div className="flex md:flex-col w-10 md:mt-5 ml-10 md:fixed gap-1">
             <ModeToggle />
             <Button variant="ghost" className="text-md" onClick={changeLanguage}> {language ? "ESP" : "ENG"}  </Button>
         </div>
