@@ -9,7 +9,9 @@ import { Separator } from '@/components/ui/separator'
 const PageAboutMe = () => {
   return (
     <>
-      <ButtonsFixed />
+      <div className="hidden md:block">
+        <ButtonsFixed />
+      </div>
       <MoreAboutMe />
       <Separator className="dark:bg-gray-500" />
       <Capabilities />
