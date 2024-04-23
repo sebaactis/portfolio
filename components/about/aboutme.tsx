@@ -1,18 +1,33 @@
+import { useLanguage } from '@/hooks/useLanguage';
 import { bebasNeue, manrope } from '@/utils/fonts'
-import React from 'react'
 
 const AboutMe = () => {
+
+    const { language } = useLanguage();
+
     return (
         <section id="aboutme" className="flex flex-col ml-6 mb-14 md:ml-36 2xl:ml-72 md:flex-row mt-20 gap-20 md:gap-52 md:mb-36">
             <div className="flex flex-col md:mx-0 gap-2">
-                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> ABOUT ME.</h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
             </div>
             <div className="md:w-[33rem] md:ml-10 flex flex-col gap-8">
-                <h2 className={`${manrope.className} md:text-2xl text-xl font-bold`}> I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h2>
-                <p className="">I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
+                <h2 className={`${manrope.className} md:text-2xl text-xl font-bold`}>
+                    {
+                        language
+                            ? "I am a developer living in Buenos Aires, Argentina."
+                            : "Soy un desarrollador que vive en Buenos Aires, Argentina."
+                    }
+                </h2>
+                <p>
+                    {
+                        language
+                            ? "I am a developer with knowledge of front-end and back-end, based in Buenos Aires, looking for interesting opportunities to learn and grow. I like to create personalized experiences for each person. Passionate and curious about problem solving. I currently specialize in the MERN stack but I am exploring .NET technology"
+                            : "Soy un desarrollador con conocimientos en front-end y back-end, con sede en Buenos Aires, que busca oportunidades interesantes para aprender y crecer. Me gusta crear experiencias personalizadas para cada persona. Apasionado y curioso por la resolución de problemas. Actualmente me especializo en el stack MERN pero estoy explorando la tecnología .NET"
+                    }
+                </p>
                 <div >
-                    <a href="/aboutme" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold">MORE ABOUT ME</a>
-                    <div className="border border-indigo-600 dark:border-indigo-400 w-[8.36rem]">
+                    <a href="/aboutme" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold">{language ? "MORE ABOUT ME" : "MAS SOBRE MI"}</a>
+                    <div className={`border border-indigo-600 dark:border-indigo-400 ${language ? "w-[8.36rem]" : "w-[7.36rem]"}`}>
 
                     </div>
                 </div>

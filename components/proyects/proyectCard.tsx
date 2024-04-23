@@ -2,7 +2,8 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { manrope } from '@/utils/fonts'
 import { Separator } from '../ui/separator'
-import { ArrowUpRight, GitBranchIcon, GitBranchPlus, Github } from 'lucide-react'
+import { ArrowUpRight, Github } from 'lucide-react'
+import { useLanguage } from '@/hooks/useLanguage'
 
 interface ProyectCardProps {
     src: StaticImageData,
@@ -15,6 +16,9 @@ interface ProyectCardProps {
 }
 
 const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: ProyectCardProps) => {
+
+    const { language } = useLanguage();
+
     return (
         <article className="flex md:flex-row flex-col mt-20 md:mt-24 gap-20 2xl:gap-36">
             <section>
@@ -34,16 +38,16 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                     <p className={`${manrope.className} text-base font-light mt-4 md:w-[34rem] md:mt-0`}>{description}</p>
                 </div>
                 <div className="flex flex-col gap-3">
-                    <h3 className="font-bold">PROYECT INFO</h3>
+                    <h3 className="font-bold">{language ? "PROYECT INFO" : "INFORMACIÓN DEL PROYECTO"}</h3>
                     <Separator className="dark:bg-gray-500" />
                     <div className="flex justify-between">
-                        <p className="font-bold">Year</p>
+                        <p className="font-bold">{language ? "Year" : "Año"}</p>
                         <p>{year}</p>
                     </div>
 
                     <Separator className="dark:bg-gray-500" />
                     <div className="flex justify-between">
-                        <p className="font-bold">Role</p>
+                        <p className="font-bold">{language ? "Role" : "Rol"}</p>
                         <p>{role}</p>
                     </div>
                     <Separator className="dark:bg-gray-500" />
@@ -52,7 +56,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                 <div className="flex gap-4">
                     <div className="flex flex-col">
                         <div className="flex">
-                            <a className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold" href={demo} target='_blank'>LIVE DEMO</a>
+                            <a className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold" href={demo} target='_blank'>{language ? "LIVE DEMO" : "DEMO EN VIVO"}</a>
                             <ArrowUpRight className="text-indigo-600 dark:text-indigo-400 font-bold underline" />
                         </div>
                         <div className="border border-indigo-600 dark:border-indigo-400">
