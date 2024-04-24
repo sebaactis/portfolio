@@ -24,7 +24,10 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
+        <section 
+        id="contact" 
+        className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
+
             <article className="flex flex-col gap-7">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "LETS CONNECT" : "CONECTEMOS"} </h2>
                 <div className="flex flex-col gap-3">
@@ -66,8 +69,8 @@ const Contact = () => {
                 <Button type="submit" className="w-[20rem] md:w-[30rem] rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">{language ? "SUBMIT" : "ENVIAR"}
                 </Button>
             </form>
-        </section>
 
+        </section>
     )
 }
 

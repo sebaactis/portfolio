@@ -1,12 +1,12 @@
 "use client"
 
 import { bebasNeue, manrope } from '@/utils/fonts'
-import React from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Photo from "@/public/foto-perfil.png"
-import { ArrowUpRight, Github, Linkedin, LinkedinIcon } from 'lucide-react'
+import { ArrowUpRight, Github, LinkedinIcon } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
+import { motion } from 'framer-motion'
 
 
 const Presentation = () => {
@@ -17,8 +17,24 @@ const Presentation = () => {
         <div className="flex md:flex-row flex-col items-center h-[800px] ml-6 md:ml-36 2xl:ml-72 gap-20 md:gap-56">
             <div className="flex flex-col justify-center mt-5 md:mt-0">
 
-                <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> {language ? "HI, I AM" : "HOLA, YO SOY"} </h2>
-                <h2 className={`${bebasNeue.className} md:text-7xl text-6xl`}> SEBASTIAN ACTIS.</h2>
+                <motion.h2
+                    className={`${bebasNeue.className} md:text-7xl text-6xl`}
+                    initial={{ y: -500, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2, duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    {language ? "HI, I AM" : "HOLA, YO SOY"}
+                </motion.h2>
+                <motion.h2
+                    className={`${bebasNeue.className} md:text-7xl text-6xl`}
+                    initial={{ y: -500, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.7, duration: 0.8 }}
+                    viewport={{ once: true }}
+                > 
+                SEBASTIAN ACTIS.
+                </motion.h2>
                 <p className={`${manrope.className} font-light mt-5 md:w-96 md:mt-2`}>
                     {
                         language
