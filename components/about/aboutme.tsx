@@ -1,5 +1,5 @@
 import { useLanguage } from '@/hooks/useLanguage';
-import { bebasNeue, manrope } from '@/utils/fonts'
+import { bebasNeue, manrope800, manrope500 } from '@/utils/fonts'
 
 const AboutMe = () => {
 
@@ -13,14 +13,14 @@ const AboutMe = () => {
                     <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
                 </div>
                 <div className="md:w-[33rem] md:ml-40 flex flex-col gap-8">
-                    <h2 className={`${manrope.className} md:text-2xl text-xl font-bold`}>
+                    <h2 className={`${manrope800.className} md:text-2xl text-xl font-bold`}>
                         {
                             language
                                 ? "I am a developer living in Buenos Aires, Argentina."
                                 : "Soy un desarrollador que vive en Buenos Aires, Argentina."
                         }
                     </h2>
-                    <p>
+                    <p className={`${manrope500.className} font-bold`}>
                         {
                             language
                                 ? "I am a developer with knowledge of front-end and back-end, based in Buenos Aires, looking for interesting opportunities to learn and grow. I like to create personalized experiences for each person. Passionate and curious about problem solving. I currently specialize in the MERN stack but I am exploring .NET technology"
@@ -28,7 +28,7 @@ const AboutMe = () => {
                         }
                     </p>
                     <div >
-                        <a href="/aboutme" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold">{language ? "MORE ABOUT ME" : "MAS SOBRE MI"}</a>
+                        <a href="/aboutme" className={`${manrope800.className} text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold`}>{language ? "MORE ABOUT ME" : "MAS SOBRE MI"}</a>
                         <div className={`border border-indigo-600 dark:border-indigo-400 ${language ? "w-[8.36rem]" : "w-[7.36rem]"}`}>
 
                         </div>

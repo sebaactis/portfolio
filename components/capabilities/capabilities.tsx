@@ -1,6 +1,5 @@
 import { useLanguage } from '@/hooks/useLanguage';
-import { bebasNeue } from '@/utils/fonts'
-import { motion } from 'framer-motion';
+import { bebasNeue, manrope500 } from '@/utils/fonts'
 import CapabilityItem from './capabilityItem';
 
 const Capabilities = () => {
@@ -15,7 +14,7 @@ const Capabilities = () => {
                 <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "MY CAPABILITIES." : "MIS CAPACIDADES."}</h2>
             </div>
             <div className="flex flex-col w-[20rem] md:w-[40rem] gap-10">
-                <p>
+                <p className={`${manrope500.className}`}>
                     {
                         language
                             ? "These are my current capabilities. I always seek to perfect what I have learned, and continue expanding my library of knowledge."

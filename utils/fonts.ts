@@ -5,4 +5,6 @@ export const bebasNeue = Bebas_Neue({
     weight: '400'
 });
 
-export const manrope = Manrope({ subsets: ["latin"] })
+export const manrope400 = Manrope({ subsets: ["latin"], weight: "400" })
+export const manrope500 = Manrope({ subsets: ["latin"], weight: "500" })
+export const manrope800 = Manrope({ subsets: ["latin"], weight: "800" })

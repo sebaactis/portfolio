@@ -2,7 +2,7 @@
 
 import NavLink from './navlink';
 import MobileToogle from './mobile-toggle';
-import { bebasNeue, manrope } from '@/utils/fonts';
+import { bebasNeue, manrope400 } from '@/utils/fonts';
 import { useLanguage } from '@/hooks/useLanguage';
 import ButtonsFixed from '../buttonsFixed';
 
@@ -17,7 +17,7 @@ const NavBar = () => {
                 <ButtonsFixed />
             </div>
             <MobileToogle />
-            <ul className={`${manrope.className} gap-4 text-lg mr-10 hidden md:flex items-center justify-between`}>
+            <ul className={`${manrope400.className} gap-4 text-lg mr-10 hidden md:flex items-center justify-between`}>
                 <NavLink label={language ? "Work" : "Trabajos"} href="proyects" />
                 <NavLink label={language ? "About Me" : "Sobre Mi"} href="aboutme" />
                 <NavLink label={language ? "Contact" : "Contacto"} href="contact" />

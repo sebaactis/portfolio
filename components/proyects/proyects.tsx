@@ -1,4 +1,4 @@
-import { bebasNeue, manrope } from '@/utils/fonts';
+import { bebasNeue, manrope400 } from '@/utils/fonts';
 import React from 'react'
 import ProyectCard from './proyectCard';
 import wotalentpreview from "@/public/wotalent-preview.png"
@@ -15,7 +15,7 @@ const Proyects = () => {
         <section id="proyects" className="ml-6 md:ml-36 2xl:ml-72 mt-14 md:mt-0 mb-20">
             <div className="flex flex-col mx-5 md:mx-0 md:mt-20 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "FEATURED PROYECTS." : "PROYECTOS DESTACADOS."}</h2>
-                <p className={`${manrope.className} font-light mt-4 md:w-96 md:mt-0`}>
+                <p className={`${manrope400.className} font-light mt-4 md:w-96 md:mt-0`}>
                     {
                         language
                             ? "Here are some of the selected projects that showcase my passion for the development"
