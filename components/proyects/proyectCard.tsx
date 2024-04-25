@@ -36,7 +36,8 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                         src={src}
                         alt="foto perfil"
                         className=" w-[15rem] h-[15rem] md:w-[26.875rem] md:h-[26.875rem] rounded-md"
-
+                        width={430}
+                        height={430}
                     >
                     </Image>
                 </div>
@@ -55,7 +56,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                     </div>
 
                     <Separator className="dark:bg-gray-500" />
-                    <div className="flex justify-between">
+                    <div className="flex justify-between gap-[5.3rem] text-pretty md:gap-0">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Role" : "Rol"}</p>
                         <p>{role}</p>
                     </div>

@@ -11,7 +11,7 @@ const Capabilities = () => {
     return (
         <section className="flex flex-col md:flex-row ml-6 md:ml-36 2xl:ml-72 gap-10 md:gap-40 mt-20 mb-20">
             <div className="flex flex-col md:mx-0 gap-2">
-                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "MY CAPABILITIES." : "MIS CAPACIDADES."}</h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "MY CAPABILITIES." : "MIS CAPACIDADES."}</h2>
             </div>
             <div className="flex flex-col w-[20rem] md:w-[40rem] gap-10">
                 <p className={`${manrope500.className}`}>

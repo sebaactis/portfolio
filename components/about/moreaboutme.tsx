@@ -11,7 +11,7 @@ const MoreAboutMe = () => {
     return (
         <section id="aboutme" className="flex flex-col mb-20 ml-6 md:ml-36 2xl:ml-72 md:flex-row mt-20 gap-20 md:gap-52 md:mb-60">
             <div className="flex flex-col md:mx-0 gap-2">
-                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
             </div>
             <div className="md:w-[44rem] 2xl:ml-20 md:ml-10 flex flex-col gap-8">
                 <h2 className={`${manrope800.className} md:text-2xl text-xl font-bold`}>

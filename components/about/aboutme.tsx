@@ -10,7 +10,7 @@ const AboutMe = () => {
             <div id="aboutme"></div>
             <section className="flex flex-col ml-6 mb-14 md:ml-36 2xl:ml-72 md:flex-row mt-20 md:mt-40 gap-20 md:gap-52 md:mb-60">
                 <div className="flex flex-col md:mx-0 gap-2">
-                    <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
+                    <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "ABOUT ME" : "SOBRE MI"}</h2>
                 </div>
                 <div className="md:w-[33rem] md:ml-40 flex flex-col gap-8">
                     <h2 className={`${manrope800.className} md:text-2xl text-xl font-bold`}>

@@ -29,7 +29,7 @@ const Contact = () => {
             className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
 
             <article className="flex flex-col gap-7">
-                <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "LETS CONNECT" : "CONECTEMOS"} </h2>
+                <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "LETS CONNECT" : "CONECTEMOS"} </h2>
                 <div className="flex flex-col gap-3">
                     <div className="flex">
                         <p className={`${manrope500.className} font-light mr-1`}>{language ? "Say hello at" : "Saluda a"}</p>
