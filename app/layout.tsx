@@ -5,9 +5,8 @@ import NavBar from "@/components/navbar/navbar";
 import { Separator } from "@/components/ui/separator";
 import Contact from "@/components/contact/contact";
 
-
 export const metadata: Metadata = {
-  title: "Sebastian Actis"
+  title: "Sebastian Actis | Full Stack Developer"
 };
 
 export default function RootLayout({
@@ -15,8 +14,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
 
   return (
     <html lang="es">

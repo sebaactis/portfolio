@@ -8,7 +8,7 @@ import { ArrowUpRight, LinkedinIcon } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { GithubIcon } from '@/utils/icons'
+import { GithubIcon, LinkedIdIcon } from '@/utils/icons'
 
 const Presentation = () => {
 
@@ -69,8 +69,8 @@ const Presentation = () => {
                         <GithubIcon />
                     </a>
 
-                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500">
-                        <LinkedinIcon className="text-white/85 dark:text-indigo-400 font-bold" />
+                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500 dark:text-indigo-400 text-white">
+                        <LinkedIdIcon />
                     </a>
                 </motion.div>
             </div>

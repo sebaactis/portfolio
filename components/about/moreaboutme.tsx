@@ -1,11 +1,8 @@
 import { bebasNeue, manrope800, manrope500 } from '@/utils/fonts'
-import React from 'react'
 import { Button } from '@/components/ui/button'
-import { ArrowDown, Github, LinkedinIcon } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
-import { GithubIcon } from '@/utils/icons'
-
-
+import { GithubIcon, LinkedIdIcon } from '@/utils/icons'
 
 const MoreAboutMe = () => {
 
@@ -43,8 +40,8 @@ const MoreAboutMe = () => {
                         <GithubIcon />
                     </a>
 
-                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500">
-                        <LinkedinIcon className="text-white/85 dark:text-indigo-400 font-bold" />
+                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500 dark:text-indigo-400 text-white">
+                        <LinkedIdIcon />
                     </a>
                 </div>
 

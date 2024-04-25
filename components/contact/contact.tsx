@@ -2,15 +2,14 @@
 
 import { FormEvent, useRef } from 'react';
 
-import { bebasNeue, manrope400, manrope500, manrope800 } from '@/utils/fonts'
-import { LinkedinIcon } from 'lucide-react'
+import { bebasNeue, manrope500, manrope800 } from '@/utils/fonts'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from '@/components/ui/button'
 import { sendEmail } from '@/utils/emailHandler';
 import { useLanguage } from '@/hooks/useLanguage';
-import { GithubIcon, InstagramIcon, XIcon } from '@/utils/icons';
+import { GithubIcon, InstagramIcon, LinkedIdIcon, XIcon } from '@/utils/icons';
 
 const Contact = () => {
 
@@ -51,7 +50,7 @@ const Contact = () => {
 
                 </div>
                 <div className="flex gap-6 items-center">
-                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank"><LinkedinIcon className="dark:text-indigo-500 hover:scale-110 transition duration-200" /></a>
+                <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><LinkedIdIcon /></a>
                     <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://github.com/sebaactis" target="_blank"><GithubIcon /></a>
                     <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://twitter.com/sebaactis" target="_blank"><XIcon /></a>
                     <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><InstagramIcon /></a>
