@@ -4,6 +4,7 @@ import { manrope } from '@/utils/fonts'
 import { Separator } from '../ui/separator'
 import { ArrowUpRight, Github } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
+import { motion } from 'framer-motion'
 
 interface ProyectCardProps {
     src: StaticImageData,
@@ -20,7 +21,13 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
     const { language } = useLanguage();
 
     return (
-        <article className="flex md:flex-row flex-col mt-20 md:mt-24 gap-20 2xl:gap-36">
+        <motion.article
+            className="flex md:flex-row flex-col mt-20 md:mt-24 gap-20 2xl:gap-36"
+            initial={{ x: -800, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            viewport={{ once: true }}
+        >
             <section>
                 <div className="bg-[#9e9e9e14] dark:bg-[#313131] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
                     <Image
@@ -74,7 +81,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                     </div>
                 </div>
             </section>
-        </article>
+        </motion.article>
     )
 }
 

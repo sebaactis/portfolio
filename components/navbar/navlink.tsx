@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-scroll'
 
 interface navLinkProps {
     label: string;
@@ -8,11 +8,11 @@ interface navLinkProps {
 const NavLink = ({ label, href }: navLinkProps) => {
     return (
         <li className="gap-2">
-            <a href={href} className="nav-link relative group font-bold pb-[2px]">
+            <Link smooth={true} duration={500} to={href} className="nav-link relative group font-bold pb-[4px] cursor-pointer">
                 {label}
-                <span className="absolute left-0 bottom-0 w-0 h-[2.5px] bg-indigo-700 transition-all duration-300 ease-in-out group-hover:w-full">
+                <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-indigo-700 transition-all duration-300 ease-in-out group-hover:w-full">
                 </span>
-            </a>
+            </Link>
         </li>
     )
 }

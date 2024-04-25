@@ -18,9 +18,9 @@ const NavBar = () => {
             </div>
             <MobileToogle />
             <ul className={`${manrope.className} gap-4 text-lg mr-10 hidden md:flex items-center justify-between`}>
-                <NavLink label={language ? "Work" : "Trabajos"} href="#proyects" />
-                <NavLink label={language ? "About Me" : "Sobre Mi"} href="#aboutme" />
-                <NavLink label={language ? "Contact" : "Contacto"} href="#contact" />
+                <NavLink label={language ? "Work" : "Trabajos"} href="proyects" />
+                <NavLink label={language ? "About Me" : "Sobre Mi"} href="aboutme" />
+                <NavLink label={language ? "Contact" : "Contacto"} href="contact" />
             </ul>
         </nav>
     )

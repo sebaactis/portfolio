@@ -7,6 +7,7 @@ import Photo from "@/public/foto-perfil.png"
 import { ArrowUpRight, Github, LinkedinIcon } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 const Presentation = () => {
 
@@ -55,13 +56,13 @@ const Presentation = () => {
                     transition={{ delay: 1.5, duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <a href="#contact">
+                    <Link smooth={true} duration={500} to="contact">
                         <Button className="rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">{language ? "CONTACT ME" : "CONTACTARME"}
                             <span className="bg-black rounded-full text-white dark:text-white p-2 ml-3 -mr-3">
                                 <ArrowUpRight />
                             </span>
                         </Button>
-                    </a>
+                    </Link>
 
                     <a href="https://github.com/sebaactis" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800">
                         <Github className="text-white dark:text-indigo-400 font-bold" />

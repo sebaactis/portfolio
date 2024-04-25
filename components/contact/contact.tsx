@@ -24,9 +24,9 @@ const Contact = () => {
     }
 
     return (
-        <section 
-        id="contact" 
-        className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
+        <section
+            id="contact"
+            className="flex md:flex-row flex-col gap-10 md:gap-0 mt-16 mb-10 ml-6 md:ml-36 2xl:ml-72">
 
             <article className="flex flex-col gap-7">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-4xl`}> {language ? "LETS CONNECT" : "CONECTEMOS"} </h2>
@@ -43,7 +43,7 @@ const Contact = () => {
                     <div className="flex">
                         <p className={`${manrope.className} font-light mr-1`}>{language ? "For more info, here is my" : "Para más información, aquí está mi"}</p>
                         <div>
-                            <a href="/aboutme"><p className={`${manrope.className} font-light hover:text-indigo-600 dark:hover:text-indigo-400`}>{language ? "resume" : "resumen"}</p></a>
+                            <a href="/aboutme"><p className={`${manrope.className} font-light hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300`}>{language ? "resume" : "resumen"}</p></a>
                             <div className="border border-indigo-600 dark:border-indigo-400" />
                         </div>
                     </div>

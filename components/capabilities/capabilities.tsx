@@ -1,5 +1,7 @@
 import { useLanguage } from '@/hooks/useLanguage';
 import { bebasNeue } from '@/utils/fonts'
+import { motion } from 'framer-motion';
+import CapabilityItem from './capabilityItem';
 
 const Capabilities = () => {
 
@@ -23,9 +25,7 @@ const Capabilities = () => {
                 <div className="flex md:w-[40rem] flex-wrap gap-3 md:gap-4">
                     {capabilities.map((capability) => {
                         return (
-                            <div key={capability} className="border border-gray-600 hover:bg-indigo-500 transition transition-500 rounded-full w-max px-4 py-2 md:px-9 md:py-3 font-bold">
-                                {capability}
-                            </div>
+                            <CapabilityItem key={capability} capability={capability} />
                         )
                     })}
                 </div>
