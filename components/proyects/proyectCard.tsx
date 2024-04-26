@@ -30,14 +30,12 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
             transition={{ delay: 0.3, duration: 0.7 }}
             viewport={{ once: true }}
         >
-            <section>
-                <div className="bg-[#9e9e9e14] dark:bg-[#313131] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
+            <section className="">
+                <div className=" bg-[#bebebead] dark:bg-[#31313128] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
                     <Image
                         src={src}
                         alt="foto perfil"
-                        className=" w-[15rem] h-[15rem] md:w-[26.875rem] md:h-[26.875rem] rounded-md"
-                        width={430}
-                        height={430}
+                        className=" w-[18rem] h-[18rem] md:w-[27.875rem] md:h-[27.875rem] rounded-md"
                     >
                     </Image>
                 </div>
@@ -66,22 +64,22 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                 <div className="flex gap-4">
                     <div className="flex flex-col">
                         <div className="flex">
-                            <a className={`${manrope800.className} text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold`} 
+                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`} 
                             href={demo} target='_blank'>{language ? "LIVE DEMO" : "DEMO EN VIVO"}</a>
-                            <ArrowUpRight className="text-indigo-600 dark:text-indigo-400 font-bold underline" />
+                            <ArrowUpRight className="text-green-600 dark:text-green-400 font-bold underline" />
                         </div>
-                        <div className="border border-indigo-600 dark:border-indigo-400">
+                        <div className="border border-green-600 dark:border-green-400">
 
                         </div>
                     </div>
                     <div className="flex flex-col">
                         <div className="flex gap-2">
-                            <a className={`${manrope800.className} text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold`}  href={githubLink} target='_blank'>GITHUB</a>
-                            <div className="dark:text-indigo-400 text-indigo-600">
+                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`}  href={githubLink} target='_blank'>GITHUB</a>
+                            <div className="dark:text-green-400 text-green-600">
                                 <GithubIconSmall />
                             </div>
                         </div>
-                        <div className="border border-indigo-600 dark:border-indigo-400 ">
+                        <div className="border border-green-600 dark:border-green-400 ">
 
                         </div>
                     </div>

@@ -28,8 +28,8 @@ const AboutMe = () => {
                         }
                     </p>
                     <div >
-                        <a href="/aboutme" className={`${manrope800.className} text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold`}>{language ? "MORE ABOUT ME" : "MAS SOBRE MI"}</a>
-                        <div className={`border border-indigo-600 dark:border-indigo-400 ${language ? "w-[8.36rem]" : "w-[7.36rem]"}`}>
+                        <a href="/aboutme" className={`${manrope800.className} transition duration-300 text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold`}>{language ? "MORE ABOUT ME" : "MAS SOBRE MI"}</a>
+                        <div className={`border border-green-600 dark:border-green-400 ${language ? "w-[8.36rem]" : "w-[7.36rem]"}`}>
 
                         </div>
                     </div>

@@ -58,18 +58,18 @@ const Presentation = () => {
                     viewport={{ once: true }}
                 >
                     <Link smooth={true} duration={500} to="contact">
-                        <Button className={`${manrope800.className} rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150`}>{language ? "CONTACT ME" : "CONTACTARME"}
+                        <Button className={`${manrope800.className} rounded-3xl py-6 px-5 text-black bg-green-400 hover:bg-green-500 dark:bg-green-500 dark:hover:bg-green-600 font-bold hover:scale-[1.02] text-md transition duration-150`}>{language ? "CONTACT ME" : "CONTACTARME"}
                             <span className="bg-black rounded-full text-white dark:text-white p-2 ml-3 -mr-3">
                                 <ArrowUpRight />
                             </span>
                         </Button>
                     </Link>
 
-                    <a href="https://github.com/sebaactis" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500 dark:text-indigo-400 text-white">
+                    <a href="https://github.com/sebaactis" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-[#222222] dark:hover:bg-gray-800 hover:bg-green-500 dark:text-green-400 text-white">
                         <GithubIcon />
                     </a>
 
-                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-indigo-600 dark:bg-[#222222] dark:hover:bg-gray-800 hover:bg-indigo-500 dark:text-indigo-400 text-white">
+                    <a href="https://www.linkedin.com/in/sebastianactis/" target="_blank" className="transition duration-500 rounded-full py-3 px-3 ml-1 bg-[#222222] dark:hover:bg-gray-800 hover:bg-green-500 dark:text-green-400 text-white">
                         <LinkedIdIcon />
                     </a>
                 </motion.div>

@@ -35,7 +35,7 @@ const Contact = () => {
                         <p className={`${manrope500.className} font-light mr-1`}>{language ? "Say hello at" : "Saluda a"}</p>
                         <div>
                             <p className={`${manrope500.className} font-light`}>sebaactis@gmail.com</p>
-                            <div className="border border-indigo-600 dark:border-indigo-400">
+                            <div className="border border-green-600 dark:border-green-400">
 
                             </div>
                         </div>
@@ -43,17 +43,17 @@ const Contact = () => {
                     <div className="flex">
                         <p className={`${manrope500.className} font-light mr-1`}>{language ? "For more info, here is my" : "Para más información, aquí está mi"}</p>
                         <div>
-                            <a href="/aboutme"><p className={`${manrope500.className} font-light hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300`}>{language ? "resume" : "resumen"}</p></a>
-                            <div className="border border-indigo-600 dark:border-indigo-400" />
+                            <a href="/aboutme"><p className={`${manrope500.className} font-light hover:text-green-600 dark:hover:text-green-400 transition duration-300`}>{language ? "resume" : "resumen"}</p></a>
+                            <div className="border border-green-600 dark:border-green-400" />
                         </div>
                     </div>
 
                 </div>
                 <div className="flex gap-6 items-center">
-                <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><LinkedIdIcon /></a>
-                    <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://github.com/sebaactis" target="_blank"><GithubIcon /></a>
-                    <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://twitter.com/sebaactis" target="_blank"><XIcon /></a>
-                    <a className="dark:text-indigo-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><InstagramIcon /></a>
+                <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><LinkedIdIcon /></a>
+                    <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://github.com/sebaactis" target="_blank"><GithubIcon /></a>
+                    <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://twitter.com/sebaactis" target="_blank"><XIcon /></a>
+                    <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><InstagramIcon /></a>
                 </div>
 
             </article>
@@ -66,7 +66,7 @@ const Contact = () => {
                 <Input required className="w-[20rem] md:w-[30rem]" type="text" id="subject" name="subject" />
                 <Label htmlFor="message">{language ? "Message" : "Mensaje"}</Label>
                 <Textarea required className="w-[20rem] md:w-[30rem]" id="message" name="message" />
-                <Button type="submit" className="w-[20rem] md:w-[30rem] rounded-3xl py-6 px-5 text-black bg-indigo-400 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-400 font-bold hover:scale-[1.02] text-md transition duration-150">{language ? "SUBMIT" : "ENVIAR"}
+                <Button type="submit" className="w-[20rem] md:w-[30rem] rounded-3xl py-6 px-5 text-black bg-green-400 hover:bg-green-400 dark:bg-green-400 dark:hover:bg-green-400 font-bold hover:scale-[1.02] text-md transition duration-150">{language ? "SUBMIT" : "ENVIAR"}
                 </Button>
             </form>
 

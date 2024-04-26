@@ -31,7 +31,8 @@ export const sendEmail = (e: FormEvent<HTMLFormElement>, formCurrent: HTMLFormEl
                         Swal.fire({
                             title: "Send email failed!",
                             text: "Error!",
-                            icon: "error"
+                            icon: "error",
+                            confirmButtonColor: "green"
                         });
                     },
                 );
