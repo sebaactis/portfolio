@@ -1,6 +1,8 @@
 import { FormEvent } from "react";
 import emailjs from '@emailjs/browser'
 import Swal from "sweetalert2";
+import { useLanguage } from "@/hooks/useLanguage";
+
 
 export const sendEmail = (e: FormEvent<HTMLFormElement>, formCurrent: HTMLFormElement) => {
     e.preventDefault();
@@ -20,9 +22,10 @@ export const sendEmail = (e: FormEvent<HTMLFormElement>, formCurrent: HTMLFormEl
                 .then(
                     () => {
                         Swal.fire({
-                            title: "Good job!",
-                            text: "Sended!",
-                            icon: "success"
+                            title: "Thank you for your contact!",
+                            text: "Your message was successfully sent!",
+                            icon: "success",
+                            confirmButtonColor: "green"
                         });
 
                         formCurrent.reset();
