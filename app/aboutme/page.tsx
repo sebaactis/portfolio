@@ -16,7 +16,7 @@ const PageAboutMe = () => {
   return (
     <>
       {showBackToTop
-        && <Button onClick={scrollToTop} variant="link" className="bg-green-700 hover:bg-green-500 text-white transition duration-300 fixed right-0 bottom-0 mr-2 mb-2 md:m-32 px-2 rounded-full">
+        && <Button onClick={scrollToTop} variant="link" className="bg-green-700 hover:bg-green-500 text-white transition duration-300 fixed right-0 bottom-0 mr-3 mb-4 md:m-32 px-2 rounded-full">
           <ArrowUp />
         </Button>}
 
