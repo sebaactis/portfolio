@@ -79,7 +79,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink, te
                     </div>
                     <Separator className="dark:bg-gray-500" />
 
-                    <div className="flex justify-between gap-[5.3rem] text-pretty md:gap-0">
+                    <div className="flex justify-between gap-[3.5rem] text-pretty md:gap-0">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Technologies" : "Tecnologias"}</p>
                         <div className="flex gap-2">
                             {techData.map(tech => {

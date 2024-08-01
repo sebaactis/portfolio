@@ -32,9 +32,9 @@ const Contact = () => {
                 <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "LETS CONNECT" : "CONECTEMOS"} </h2>
                 <div className="flex flex-col gap-3">
                     <div className="flex">
-                        <p className={`${manrope500.className} font-light mr-1`}>{language ? "Say hello at" : "Saluda a"}</p>
+                        <p className={`${manrope500.className} font-light mr-1`}>{language ? "Send me a email" : "Enviame un email"}</p>
                         <div>
-                            <p className={`${manrope500.className} font-light`}>sebaactis@gmail.com</p>
+                            <p className={`${manrope500.className} font-light text-green-400 hover:text-green-300 transition`}><a href="mailto:sebaactis@gmail.com">{language ? "here" : "aquí"}</a></p>
                             <div className="border border-green-600 dark:border-green-400">
 
                             </div>
