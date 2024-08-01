@@ -5,6 +5,8 @@ import wotalentpreview from "@/public/wotalent-preview.png"
 import hamburguepediapreview from "@/public/hamburguepedia-preview.png"
 import ficsorpreview from "@/public/ficsor-preview.png"
 import windenpreview from "@/public/winden-preview.png"
+import apinet from "@/public/netapi.png"
+import hospitality from "@/public/hospitality.png"
 import { useLanguage } from '@/hooks/useLanguage';
 
 const Proyects = () => {
@@ -36,6 +38,7 @@ const Proyects = () => {
                     role='Front End Developer & Back End Developer'
                     demo='https://wotalent.com.ar'
                     githubLink='https://github.com/sebaactis/wotalent'
+                    techData={["JS","REACT", "NODE", "MONGO"]}
                 />
                 <ProyectCard
                     src={hamburguepediapreview}
@@ -49,6 +52,7 @@ const Proyects = () => {
                     role='Front End Developer'
                     demo='https://hamburguepedia.netlify.app/'
                     githubLink='https://github.com/sebaactis/reactjs-hamburguepedia'
+                    techData={["JS", "REACT", "FIREBASE"]}
                 />
                 <ProyectCard
                     src={ficsorpreview}
@@ -62,6 +66,7 @@ const Proyects = () => {
                     role='Front End Developer'
                     demo='https://ficsor.com.ar/'
                     githubLink='https://github.com/sebaactis/Ficsor'
+                    techData={["JS", "REACT"]}
                 />
                 <ProyectCard
                     src={windenpreview}
@@ -75,6 +80,35 @@ const Proyects = () => {
                     role='Front End Developer'
                     demo='https://windenvelas.netlify.app/'
                     githubLink='https://github.com/sebaactis/Winden-velas-Proyecto-Final-Coderhouse'
+                    techData={["HTML", "CSS"]}
+                />
+                <ProyectCard
+                    src={hospitality}
+                    title='Hospitality'
+                    description={
+                        language
+                            ? "Management system for medical appointments. It has appointment, staff and patient management among other functionalities. It has its own API in Supabase and managed with Prisma ORM."
+                            : "Sistema de gestión para citas medicas. Cuenta con administracion de citas, personal y pacientes entre otras funcionalidades. Cuenta con su propia API en Supabase y gestionada con Prisma ORM"
+                    }
+                    year={2024}
+                    role='Front End Developer'
+                    demo='https://windenvelas.netlify.app/'
+                    githubLink='https://github.com/sebaactis/citas-medicas'
+                    techData={["JS", "REACT", "ASTRO", "PRISMA", "SQL"]}
+                />
+                <ProyectCard
+                    src={apinet}
+                    title={language ? ".NET API Shop Cart" : "API Carrito de compras en .NET"}
+                    description={
+                        language
+                            ? "API to implement a shopping cart in C# language. It has the process of adding products to the cart, finalizing the purchase with an issuance of an order, and authentication of users and roles."
+                            : "API para implementar un carrito de compras en lenguaje C#. Cuenta con el proceso de agregar productos al carrito, finalizar la compra con una emision de una orden, y una autenticacion de usuarios y roles."
+                    }
+                    year={2024}
+                    role='Back End Developer'
+                    demo=''
+                    githubLink='https://github.com/sebaactis/CarritoDeCompras.NET'
+                    techData={["C#", "ENTITY FRAMEWORK", "SQL"]}
                 />
             </div>
         </section>

@@ -15,9 +15,28 @@ interface ProyectCardProps {
     role: string
     demo: string,
     githubLink: string
+    techData: string[]
 }
 
-const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: ProyectCardProps) => {
+const technologies = [
+    {name: "REACT", color: "blue"},
+    {name: "NODE", color: "green"},
+    {name: "ASTRO", color: "indigo"},
+    {name: "NEXT", color: "slate"},
+    {name: "CSS", color: "cyan"},
+    {name: "HTML", color: "orange"},
+    {name: "JS", color: "yellow"},
+    {name: "PRISMA", color: "gray"},
+    {name: "C#", color: "violet"},
+    {name: "ENTITY FRAMEWORK", color: "lime"},
+    {name: "SUPABASE", color: "emerald"},
+    {name: "SQL", color: "stone"},
+    {name: "MONGO", color: "teal"},
+    {name: "FIREBASE", color: "amber"}
+]
+
+
+const ProyectCard = ({ src, title, description, year, role, demo, githubLink, techData }: ProyectCardProps) => {
 
     const { language } = useLanguage();
 
@@ -60,21 +79,34 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink }: 
                     </div>
                     <Separator className="dark:bg-gray-500" />
 
+                    <div className="flex justify-between gap-[5.3rem] text-pretty md:gap-0">
+                        <p className={`${manrope800.className} font-bold`}>{language ? "Technologies" : "Tecnologias"}</p>
+                        <div className="flex gap-2">
+                            {techData.map(tech => {
+                                return (
+                                    <p key={tech} className={`bg-${technologies.find(t => t.name === tech)?.color}-500 p-1.5 rounded-md text-xs font-bold`}>{technologies.find(t => t.name === tech)?.name}</p>
+                                )
+                            })}
+                        </div>
+
+                    </div>
+
                 </div>
-                <div className="flex gap-4">
+                <div className={`flex ${demo === "" ? "" : "gap-4"}`}>
                     <div className="flex flex-col">
-                        <div className="flex">
-                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`} 
-                            href={demo} target='_blank'>{language ? "LIVE DEMO" : "DEMO EN VIVO"}</a>
+                        {demo === "" ? "" : <><div className="flex">
+                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`}
+                                href={demo} target='_blank'>{language ? "LIVE DEMO" : "DEMO EN VIVO"}</a>
                             <ArrowUpRight className="text-green-600 dark:text-green-400 font-bold underline" />
                         </div>
-                        <div className="border border-green-600 dark:border-green-400">
+                            <div className="border border-green-600 dark:border-green-400">
 
-                        </div>
+                            </div> </>}
+
                     </div>
                     <div className="flex flex-col">
                         <div className="flex gap-2">
-                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`}  href={githubLink} target='_blank'>GITHUB</a>
+                            <a className={`${manrope800.className} text-green-600 dark:text-green-400 hover:text-green-500 dark:hover:text-green-300 font-bold transition duration-300`} href={githubLink} target='_blank'>GITHUB</a>
                             <div className="dark:text-green-400 text-green-600">
                                 <GithubIconSmall />
                             </div>
