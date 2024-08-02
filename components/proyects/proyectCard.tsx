@@ -79,9 +79,9 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink, te
                     </div>
                     <Separator className="dark:bg-gray-500" />
 
-                    <div className="flex justify-between gap-[3.5rem] text-pretty md:gap-0">
+                    <div className="flex justify-between gap-[1.5rem] text-pretty md:gap-0">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Technologies" : "Tecnologias"}</p>
-                        <div className="flex gap-2">
+                        <div className="flex flex-wrap gap-2">
                             {techData.map(tech => {
                                 return (
                                     <p key={tech} className={`bg-${technologies.find(t => t.name === tech)?.color}-500 p-1.5 rounded-md text-xs font-bold`}>{technologies.find(t => t.name === tech)?.name}</p>

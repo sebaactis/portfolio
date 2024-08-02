@@ -36,7 +36,7 @@ const Proyects = () => {
                     }
                     year={2023}
                     role='Front End Developer & Back End Developer'
-                    demo='https://wotalent.com.ar'
+                    demo='https://wotalent.netlify.app/'
                     githubLink='https://github.com/sebaactis/wotalent'
                     techData={["JS","REACT", "NODE", "MONGO"]}
                 />
