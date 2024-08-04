@@ -26,9 +26,9 @@ export default function Home() {
 
       <main>
         <Presentation />
-        <Separator className="dark:bg-gray-500" />
+        <Separator className="dark:bg-gray-500 bg-black" />
         <Proyects />
-        <Separator className="dark:bg-gray-500" />
+        <Separator className="dark:bg-gray-500 bg-black" />
         <AboutMe />
       </main>
     </>

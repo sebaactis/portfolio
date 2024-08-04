@@ -25,7 +25,7 @@ export default function RootLayout({
         >
           <NavBar />
           {children}
-          <Separator className="dark:bg-gray-500" />
+          <Separator className="dark:bg-gray-500 bg-black" />
           <Contact />
         </ThemeProvider>
       </body>

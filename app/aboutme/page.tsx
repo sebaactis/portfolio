@@ -24,9 +24,9 @@ const PageAboutMe = () => {
         <ButtonsFixed />
       </div>
       <MoreAboutMe />
-      <Separator className="dark:bg-gray-500" />
+      <Separator className="dark:bg-gray-500 bg-black" />
       <Capabilities />
-      <Separator className="dark:bg-gray-500" />
+      <Separator className="dark:bg-gray-500 bg-black" />
       <Experience />
     </>
   )
