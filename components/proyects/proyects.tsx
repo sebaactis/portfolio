@@ -6,6 +6,7 @@ import hamburguepediapreview from "@/public/hamburguepedia-preview.png"
 import ficsorpreview from "@/public/ficsor-preview.png"
 import windenpreview from "@/public/winden-preview.png"
 import apinet from "@/public/netapi.png"
+import jsapi from "@/public/jsapi.png"
 import hospitality from "@/public/hospitality.png"
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -20,9 +21,10 @@ const Proyects = () => {
                 <p className={`${manrope400.className} font-light mt-4 md:w-96 md:mt-0`}>
                     {
                         language
-                            ? "Here are some of the selected projects that showcase my passion for the development"
-                            : "Estos son algunos de los proyectos seleccionados que muestran mi pasión por el desarrollo."
+                            ? "These are some of the selected projects that show my passion for development. You will find more projects in my "
+                            : "Estos son algunos de los proyectos seleccionados que muestran mi pasión por el desarrollo. Encontrarás mas proyectos en mi "
                     }
+                    <a className="text-yellow-600 dark:text-yellow-400 hover:text-yellow-500 dark:hover:text-yellow-500 transition font-bold" href="https://github.com/sebaactis?tab=repositories" target="_blank">github</a>
                 </p>
             </div>
             <div>
@@ -53,6 +55,20 @@ const Proyects = () => {
                     demo='https://hamburguepedia.netlify.app/'
                     githubLink='https://github.com/sebaactis/reactjs-hamburguepedia'
                     techData={["JS", "REACT", "FIREBASE"]}
+                />
+                <ProyectCard
+                    src={jsapi}
+                    title={language ? "JS API Shop Cart" : "API Carrito de compras con JS"}
+                    description={
+                        language
+                            ? "API that implements a shopping cart in Javascript language. This project was part of the final project for the Corderhouse backend course. It has endpoints for products, users, security via jwt, roles, data validation, testing with chia, using containers with Docker, among other features."
+                            : "API que implementa un carrito de compras en lenguaje Javascript. Este proyecto formo parte del proyecto final para el curso de backend de Corderhouse. Cuenta con endpoints para productos, usuarios, seguridad via jwt, roles, validacion de datos, testing con chia, uso de contenedores con Docker, entre otras caracteristicas."
+                    }
+                    year={2023}
+                    role='Back End Developer'
+                    demo=''
+                    githubLink='https://github.com/sebaactis/backend-coderhouse'
+                    techData={["JS", "NODE", "MONGO", ]}
                 />
                 <ProyectCard
                     src={ficsorpreview}

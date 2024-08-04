@@ -50,7 +50,7 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink, te
             viewport={{ once: true }}
         >
             <section className="">
-                <div className=" bg-[#bebebead] dark:bg-[#31313128] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
+                <div className=" bg-[#bebebe50] dark:bg-[#31313128] w-[21rem] h-[21rem] md:w-[32.5rem] md:h-[32.5rem] flex items-center justify-center rounded-md">
                     <Image
                         src={src}
                         alt="foto perfil"
@@ -66,18 +66,18 @@ const ProyectCard = ({ src, title, description, year, role, demo, githubLink, te
                 </div>
                 <div className="flex flex-col gap-3">
                     <h3 className="font-bold">{language ? "PROYECT INFO" : "INFORMACIÓN DEL PROYECTO"}</h3>
-                    <Separator className="dark:bg-gray-500" />
+                    <Separator className="dark:bg-gray-500 bg-black" />
                     <div className="flex justify-between">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Year" : "Año"}</p>
                         <p>{year}</p>
                     </div>
 
-                    <Separator className="dark:bg-gray-500" />
+                    <Separator className="dark:bg-gray-500 bg-black" />
                     <div className="flex justify-between gap-[5.3rem] text-pretty md:gap-0">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Role" : "Rol"}</p>
                         <p>{role}</p>
                     </div>
-                    <Separator className="dark:bg-gray-500" />
+                    <Separator className="dark:bg-gray-500 bg-black" />
 
                     <div className="flex justify-between gap-[1.5rem] text-pretty md:gap-0">
                         <p className={`${manrope800.className} font-bold`}>{language ? "Technologies" : "Tecnologias"}</p>

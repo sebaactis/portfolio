@@ -17,7 +17,7 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className="bg-slate-50/70 dark:bg-stone-900">
+      <body className="bg-slate-300/50 dark:bg-stone-900">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

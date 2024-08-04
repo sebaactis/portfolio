@@ -34,7 +34,7 @@ const Contact = () => {
                     <div className="flex">
                         <p className={`${manrope500.className} font-light mr-1`}>{language ? "Send me a email" : "Enviame un email"}</p>
                         <div>
-                            <p className={`${manrope500.className} font-light text-green-400 hover:text-green-300 transition`}><a href="mailto:sebaactis@gmail.com">{language ? "here" : "aquí"}</a></p>
+                            <p className={`${manrope500.className} font-light text-green-600 hover:text-green-500 transition`}><a href="mailto:sebaactis@gmail.com">{language ? "here" : "aquí"}</a></p>
                             <div className="border border-green-600 dark:border-green-400">
 
                             </div>
