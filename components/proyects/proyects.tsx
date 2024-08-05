@@ -108,7 +108,7 @@ const Proyects = () => {
                     }
                     year={2024}
                     role='Front End Developer'
-                    demo=''
+                    demo='https://citasmedicasdash.netlify.app'
                     githubLink='https://github.com/sebaactis/citas-medicas'
                     techData={["JS", "REACT", "ASTRO", "PRISMA", "SQL"]}
                 />
