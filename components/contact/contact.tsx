@@ -52,8 +52,6 @@ const Contact = () => {
                 <div className="flex gap-6 items-center">
                 <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><LinkedIdIcon /></a>
                     <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://github.com/sebaactis" target="_blank"><GithubIcon /></a>
-                    <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://twitter.com/sebaactis" target="_blank"><XIcon /></a>
-                    <a className="dark:text-green-500 hover:scale-110 transition duration-200" href="https://instagram.com/sebaactis" target="_blank"><InstagramIcon /></a>
                 </div>
 
             </article>
