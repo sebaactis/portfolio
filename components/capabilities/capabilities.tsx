@@ -1,7 +1,7 @@
 import { useLanguage } from '@/hooks/useLanguage';
 import { bebasNeue, manrope500 } from '@/utils/fonts'
 import CapabilityItem from './capabilityItem';
-import {AstroIcon, BootstrapIcon, CSharpIcon, CssIcon, DockerIcon, FirebaseIcon, HtmlIcon, JsIcon, MongoIcon, NextIcon, NodeIcon, PostmanIcon, PrismaIcon, ReactIcon, SupabaseIcon, TailwindIcon, TsIcon} from './icons/Icons';
+import {AstroIcon, BootstrapIcon, CSharpIcon, CssIcon, DockerIcon, FirebaseIcon, HtmlIcon, JavaIcon, JsIcon, MongoIcon, NextIcon, NodeIcon, ORMicon, PostmanIcon, PrismaIcon, ReactIcon, SQLIcon, SupabaseIcon, TailwindIcon, TsIcon} from './icons/Icons';
 
 const Capabilities = () => {
 
@@ -25,7 +25,11 @@ const Capabilities = () => {
         { name: "MONGO", icon: <MongoIcon /> , color: "green"},
         { name: "FIREBASE", icon: <FirebaseIcon /> , color: "orange"},
         { name: "PRISMA", icon: <PrismaIcon /> , color: "gray"},
-        { name: "SUPABASE", icon: <SupabaseIcon /> , color: "green"}
+        { name: "SUPABASE", icon: <SupabaseIcon /> , color: "green"},
+        { name: "SQL", icon: <SQLIcon /> , color: "gray"},
+        { name: "JAVA", icon: <JavaIcon /> , color: "orange"},
+        { name: "JPA", icon: <ORMicon /> , color: "orange"},
+        { name: "ENTITY FRAMEWORK", icon: <ORMicon /> , color: "violet"},
     ]
 
     return (
