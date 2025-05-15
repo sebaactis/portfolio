@@ -33,7 +33,7 @@ const Capabilities = () => {
             <div className="flex flex-col md:mx-0 gap-2">
                 <h2 className={`${bebasNeue.className} md:text-7xl text-5xl`}> {language ? "MY SKILLS." : "MIS HABILIDADES."}</h2>
             </div>
-            <div className="flex flex-col w-[20rem] md:w-[40rem] gap-10">
+            <div  className="flex flex-col w-[20rem] md:w-[40rem] gap-10">
                 <p className={`${manrope500.className}`}>
                     {
                         language

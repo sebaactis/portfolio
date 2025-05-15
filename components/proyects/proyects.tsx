@@ -7,6 +7,10 @@ import ficsorpreview from "@/public/ficsor-preview.png"
 import windenpreview from "@/public/winden-preview.png"
 import apinet from "@/public/netapi.png"
 import jsapi from "@/public/jsapi.png"
+import powermix from "@/public/powermix-preview.png"
+import lallave from "@/public/lallave-preview.png"
+import medieval from "@/public/medieval-preview.png"
+import library from "@/public/library-preview.png"
 import hospitality from "@/public/hospitality.png"
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -124,6 +128,62 @@ const Proyects = () => {
                     role='Back End Developer'
                     demo=''
                     githubLink='https://github.com/sebaactis/CarritoDeCompras.NET'
+                    techData={["C#", "ENTITY FRAMEWORK", "SQL"]}
+                />
+                <ProyectCard
+                    src={powermix}
+                    title={"Power Mix Station"}
+                    description={
+                        language
+                            ? "Website for real client. It consists of an informative website showing the operation of a shake machine for people who exercise."
+                            : "Página web para cliente real. La misma consta de un web informativa donde se muestra el funcionamiento de una maquina de batidos para personas que realizan ejercicio."
+                    }
+                    year={2025}
+                    role='Front End Developer'
+                    demo='https://www.powermixstation.com.ar'
+                    githubLink='https://github.com/sebaactis/power-mix-station'
+                    techData={["REACT", "NEXT", "TAILWIND"]}
+                />
+                <ProyectCard
+                    src={library}
+                    title={language ? "Library API" : "API de Libreria"}
+                    description={
+                        language
+                            ? "API for a library management system. It has a process of authentication and authorization by roles, handling of JWT tokens, handling of email notifications, among other characteristics."
+                            : "API para un sistema de gestion de una libreria. Cuenta con proceso de autenticacion y autorizacion por roles, manejo de tokens JWT, manejo de notificaciones por email, entre otras caracteristicas."
+                    }
+                    year={2025}
+                    role='Back End Developer'
+                    demo=''
+                    githubLink='https://github.com/sebaactis/Library-API'
+                    techData={["JAVA", "JPA", "SPRING-BOOT"]}
+                />
+                <ProyectCard
+                    src={lallave}
+                    title={language ? "La llave de sol" : "La llave de sol"}
+                    description={
+                        language
+                            ? "Website for real client. It is a landing of an influencer that is dedicated to nutrition and personal discovery."
+                            : "Página web para cliente real. La misma es una landing de una influencer que se dedica a la nutricion y el descubrimiento personal."
+                    }
+                    year={2025}
+                    role='Front End Developer'
+                    demo='https://lallavedesol.com'
+                    githubLink='https://github.com/sebaactis/la-llave-de-sol'
+                    techData={["REACT", "NEXT", "TAILWIND"]}
+                />
+                <ProyectCard
+                    src={medieval}
+                    title={language ? "Medieval API" : "API Medieval"}
+                    description={
+                        language
+                            ? "API that simulates the back end of a medieval game. It has a process to manage characters, objects and weapons. The development is armed based on the SOLID pattern and the CQRS pattern."
+                            : "API que simula el back end de un juego medieval. Cuenta con un proceso para gestionar personajes, objetos y armas. El desarrollo esta armado en base al patron SOLID y al patron CQRS."
+                    }
+                    year={2025}
+                    role='Back End Developer'
+                    demo=''
+                    githubLink='https://github.com/sebaactis/MedievalAPI'
                     techData={["C#", "ENTITY FRAMEWORK", "SQL"]}
                 />
             </div>

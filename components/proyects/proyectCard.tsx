@@ -32,7 +32,11 @@ const technologies = [
     {name: "SUPABASE", color: "emerald"},
     {name: "SQL", color: "stone"},
     {name: "MONGO", color: "teal"},
-    {name: "FIREBASE", color: "amber"}
+    {name: "FIREBASE", color: "amber"},
+    {name: "TAILWIND", color: "cyan"},
+    {name: "JAVA", color: "orange"},
+    {name: "JPA", color: "emerald"},
+    {name: "SPRING-BOOT", color: "emerald"},
 ]
 
 
